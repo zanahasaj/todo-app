@@ -55,14 +55,14 @@ function Home() {
           {state.todos.map((todo) => {
             return (
               <li
-                className={todo.completed ? "completed" : ""}
+                className={`${todo.completed ? "completed" : ""} list_bullets`}
                 onClick={() => handleCompleted(todo)}
                 key={todo.id}
               >
-                {todo.title}
+               <span> {todo.title} </span>
                 {"               "}
                 <AiFillDelete onClick={() => {dispatch({type: "DELETE", payload: todo.id})}}></AiFillDelete>
-                <AiFillEdit></AiFillEdit>
+                <AiFillEdit></AiFillEdit> 
               </li>
             );
           })}

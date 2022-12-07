@@ -42,3 +42,8 @@ h1 {
 .completed {
   text-decoration: line-through;
 }
+
+.list_items li {
+  margin: 15px 0px;
+  font-size: 25px;
+}
